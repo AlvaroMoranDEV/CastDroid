@@ -10,13 +10,8 @@ public class PodCastChannelConnection extends Connection {
         super();
     }
 
-    public PodCastChannelConnection(ProgressBar progressBar) {
-        super(progressBar);
-    }
-
-
     @Override
-    protected MessageContainer doInBackground(Void... voids) {
+    public MessageContainer performQuery() {
         return null;
     }
 
@@ -25,7 +20,6 @@ public class PodCastChannelConnection extends Connection {
 
     }
 
-    @Override
     public String createFullQuery() {
         return null;
     }

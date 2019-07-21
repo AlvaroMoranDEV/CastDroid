@@ -1,8 +1,7 @@
 package com.alvaromoran.podcasts.services.connections;
 
-import android.widget.ProgressBar;
-
 import com.alvaromoran.podcasts.services.connections.templates.ITunesMessage;
+import com.alvaromoran.podcasts.services.connections.templates.MessageContainer;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -21,13 +20,8 @@ import java.util.stream.Collectors;
  */
 public class ITunesConnection extends Connection {
 
-
     public ITunesConnection() {
         super();
-    }
-
-    public ITunesConnection(ProgressBar progressBar) {
-        super(progressBar);
     }
 
     @Override
@@ -37,10 +31,9 @@ public class ITunesConnection extends Connection {
         }
     }
 
-    @Override
-    protected ITunesMessage doInBackground(Void... parameters) {
-        ITunesMessage receivedMessage;
+    public MessageContainer performQuery() {
         HttpURLConnection serverConnection = null;
+        String result = null;
         try {
             // Http URL connection with the server
             URL fullUrlQuery = new URL(createFullQuery());
@@ -48,12 +41,8 @@ public class ITunesConnection extends Connection {
             serverConnection.setRequestMethod("GET");
             // Buffer to read the answer
             InputStream in = new BufferedInputStream(serverConnection.getInputStream());
-            String result = new BufferedReader(new InputStreamReader(in))
+            result = new BufferedReader(new InputStreamReader(in))
                     .lines().collect(Collectors.joining("\n"));
-
-            // Parses the returned message into an object
-            receivedMessage = new ITunesMessage();
-            receivedMessage.setFullMessage(result);
 
         } catch (MalformedURLException e) {
             throw new RuntimeException("Error creating a valid URL", e);
@@ -69,7 +58,16 @@ public class ITunesConnection extends Connection {
                 serverConnection.disconnect();
             }
         }
-        return receivedMessage;
+        return messageParsing(result);
+    }
+
+    private MessageContainer messageParsing(String result) {
+        // Parses the returned message into an object
+        ITunesMessage itunesMessage = new ITunesMessage();
+        itunesMessage.setFullMessage(result);
+        itunesMessage.parseMessage();
+        storeLastResponse(itunesMessage);
+        return itunesMessage;
     }
 
     /**
@@ -77,8 +75,7 @@ public class ITunesConnection extends Connection {
      *
      * @return full formatted url
      */
-    @Override
-    public String createFullQuery() {
+    private String createFullQuery() {
 
         String queryUrl = null;
         // Validations for the needed arguments
@@ -100,5 +97,4 @@ public class ITunesConnection extends Connection {
         }
         return queryUrl;
     }
-
 }

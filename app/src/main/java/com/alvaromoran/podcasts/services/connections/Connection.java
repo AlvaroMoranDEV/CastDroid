@@ -1,8 +1,5 @@
 package com.alvaromoran.podcasts.services.connections;
 
-import android.os.AsyncTask;
-import android.widget.ProgressBar;
-
 import com.alvaromoran.podcasts.services.connections.templates.MessageContainer;
 
 import java.util.HashMap;
@@ -11,7 +8,7 @@ import java.util.HashMap;
  * Abstract class that implements all basic functionality to perform
  * a query over an URL
  */
-public abstract class Connection extends AsyncTask<Void, Void, MessageContainer> implements Query {
+public abstract class Connection {
 
     /**
      * String builder to create the URL to perform the query
@@ -23,15 +20,7 @@ public abstract class Connection extends AsyncTask<Void, Void, MessageContainer>
      */
     protected HashMap<String, String> parameters;
 
-    /**
-     * Reference to a progress bar represented by the UI
-     */
-    protected ProgressBar progressBarReference;
-
-    /**
-     * Result of the last query that has been performed over the net
-     */
-    protected MessageContainer lastQueryResult;
+    protected MessageContainer lastQueryAnswer;
 
     /**
      * Empty constructor of the class
@@ -42,29 +31,29 @@ public abstract class Connection extends AsyncTask<Void, Void, MessageContainer>
     }
 
     /**
-     * Constructor of the class with reference for the progress bar to be displayed
-     * when performing a query
+     * Adds additional parameters to perform the query over the web provider
      *
-     * @param progressBar reference to the progress bar to be shown in the UI
+     * @param key   parameter key
+     * @param value parameter value
      */
-    public Connection(ProgressBar progressBar) {
-        this(); // Chained constructor
-        this.progressBarReference = progressBar;
-    }
-
-    @Override
     public void addAdditionalQueryParameter(String key, String value) {
         if (key != null && value != null && !key.isEmpty() && !value.isEmpty()) {
             this.parameters.put(key, value);
         }
     }
 
-    @Override
+    /**
+     * Cleans all query parameters stored
+     */
     public void cleanQuery() {
         this.parameters.clear();
     }
 
-    @Override
+    /**
+     * Removes a single query parameter by specifying its key
+     *
+     * @param key key to access the query parameter to be deleted
+     */
     public void removeQueryParameter(String key) {
         if (key != null) {
             this.parameters.remove(key);
@@ -76,8 +65,8 @@ public abstract class Connection extends AsyncTask<Void, Void, MessageContainer>
      *
      * @param receivedMessage received message
      */
-    protected void storeLastResponse(MessageContainer receivedMessage) {
-        this.lastQueryResult = receivedMessage;
+    public void storeLastResponse(MessageContainer receivedMessage) {
+        this.lastQueryAnswer = receivedMessage;
     }
 
     /**
@@ -86,33 +75,17 @@ public abstract class Connection extends AsyncTask<Void, Void, MessageContainer>
      * @return last query message received
      */
     public MessageContainer getLastQueryResult() {
-        return this.lastQueryResult;
+        return this.lastQueryAnswer;
     }
 
-    @Override
-    protected void onPreExecute() {
-        if (this.progressBarReference != null) {
-            progressBarReference.setVisibility(ProgressBar.VISIBLE);
-            onProgressUpdate(0);
-        }
-    }
 
-    @Override
-    protected void onPostExecute(MessageContainer result) {
-        onProgressUpdate(30);
-        result.parseMessage();
-        onProgressUpdate(60);
-        storeLastResponse(result);
-        onProgressUpdate(100);
-    }
 
-    protected void onProgressUpdate(int... values) {
-        if (this.progressBarReference != null) {
-            this.progressBarReference.setProgress(values[0]);
-            if (values[0] == 100) {
-                this.progressBarReference.setVisibility(ProgressBar.INVISIBLE);
-            }
-        }
-    }
+
+    abstract public MessageContainer performQuery();
+
+    /**
+     * Adds the default and main parameter to perform the query over the web provider
+     */
+    abstract void addDefaultQueryParameter(String parameter);
 
 }

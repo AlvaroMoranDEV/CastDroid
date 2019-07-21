@@ -1,10 +1,16 @@
 package com.alvaromoran.podcasts.services.connections.templates;
 
+import com.alvaromoran.podcasts.services.connections.templates.generic.XmlRoot;
+
 public class GenericPodCastMessage implements MessageContainer {
+
+    private XmlRoot parsedMessage;
+
+    private String fullMessage;
 
     @Override
     public void setFullMessage(String fullMessage) {
-
+    this.fullMessage = fullMessage;
     }
 
     @Override

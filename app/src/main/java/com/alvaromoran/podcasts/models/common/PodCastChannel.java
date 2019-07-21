@@ -17,6 +17,9 @@ public abstract class PodCastChannel implements Comparable<PodCastChannel> {
      */
     private String channelName;
 
+    /** Name of the artist */
+    private String artistName;
+
     /**
      * Channel brief description to be shown to the user in the UI
      */
@@ -51,6 +54,11 @@ public abstract class PodCastChannel implements Comparable<PodCastChannel> {
      * List of associated episodes of the channel
      */
     private List<PodCastEpisode> channelEpisodes;
+
+    /**
+     * URL where the channels information is retrieved from
+     */
+    private String feedUrl;
 
     // endregion
 
@@ -158,6 +166,22 @@ public abstract class PodCastChannel implements Comparable<PodCastChannel> {
 
     public void setChannelEpisodes(List<PodCastEpisode> listOfEpisodes) {
         this.channelEpisodes = listOfEpisodes;
+    }
+
+    public String getArtistName() {
+        return artistName;
+    }
+
+    public void setArtistName(String artistName) {
+        this.artistName = artistName;
+    }
+
+    public String getFeedUrl() {
+        return feedUrl;
+    }
+
+    public void setFeedUrl(String feedUrl) {
+        this.feedUrl = feedUrl;
     }
 
     public Collection<PodCastEpisode> getFullListOfEpisodes() {

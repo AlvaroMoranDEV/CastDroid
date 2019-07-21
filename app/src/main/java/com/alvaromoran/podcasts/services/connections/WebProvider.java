@@ -1,9 +1,11 @@
 package com.alvaromoran.podcasts.services.connections;
 
+import android.widget.GridView;
 import android.widget.ProgressBar;
 
 import com.alvaromoran.podcasts.services.connections.templates.GenericPodCastMessage;
 import com.alvaromoran.podcasts.services.connections.templates.ITunesMessage;
+import com.alvaromoran.podcasts.services.connections.templates.MessageContainer;
 
 /**
  * Class that manages the connection over the ITunes store or the different PodCast providers
@@ -16,17 +18,12 @@ public class WebProvider {
     /**
      * Manages the connection over the ITunes store, used as PodCasts database
      */
-    private final ITunesConnection itunesConnection;
+    private final Connection itunesConnection;
 
     /**
      * Manages the connection over a single PodCast provider
      */
-    private final PodCastChannelConnection podcastChannelConnection;
-
-    /**
-     * Reference to the progress bar used by the IU to represent an ongoing process
-     */
-    private ProgressBar progressBarReference;
+    private final Connection podcastChannelConnection;
 
     //endregion
 
@@ -38,23 +35,6 @@ public class WebProvider {
     public WebProvider() {
         this.itunesConnection = new ITunesConnection();
         this.podcastChannelConnection = new PodCastChannelConnection();
-    }
-
-    /**
-     * Constructor of the class with reference for a progress bar to
-     * be displayed in the UI
-     *
-     * @param progressBarReference progress bar reference
-     */
-    public WebProvider(ProgressBar progressBarReference) {
-        if (progressBarReference != null) {
-            this.progressBarReference = progressBarReference;
-            this.itunesConnection = new ITunesConnection(this.progressBarReference);
-            this.podcastChannelConnection = new PodCastChannelConnection(this.progressBarReference);
-        } else {
-            this.itunesConnection = new ITunesConnection();
-            this.podcastChannelConnection = new PodCastChannelConnection();
-        }
     }
 
     // endregion
@@ -84,9 +64,8 @@ public class WebProvider {
      *
      * @return parsed message received from the provider with the results of the query
      */
-    public ITunesMessage performQueryOverITunes() {
-        this.itunesConnection.execute();
-        return (ITunesMessage) this.itunesConnection.getLastQueryResult();
+    public MessageContainer performQueryOverITunes() {
+        return this.itunesConnection.performQuery();
     }
 
     /**
@@ -124,9 +103,8 @@ public class WebProvider {
      *
      * @return parsed message received from the provider
      */
-    public GenericPodCastMessage performQueryOverPodcastChannel() {
-        this.podcastChannelConnection.execute();
-        return (GenericPodCastMessage) this.podcastChannelConnection.getLastQueryResult();
+    public MessageContainer performQueryOverPodcastChannel() {
+        return this.podcastChannelConnection.performQuery();
     }
 
     //endregion
