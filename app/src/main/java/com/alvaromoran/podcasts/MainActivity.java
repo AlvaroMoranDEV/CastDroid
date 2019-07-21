@@ -13,12 +13,16 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.widget.AdapterView;
 import android.widget.EditText;
-import android.widget.ProgressBar;
+import android.widget.GridView;
 
-import com.alvaromoran.podcasts.services.connections.ITunesConnection;
-import com.alvaromoran.podcasts.services.connections.WebProvider;
-import com.alvaromoran.podcasts.services.connections.templates.ITunesMessage;
+import com.alvaromoran.podcasts.models.common.PodCastChannel;
+import com.alvaromoran.podcasts.services.controllers.ChannelAndPodCastsGuiInflater;
+import com.alvaromoran.podcasts.services.controllers.QueryTaskParameters;
+import com.alvaromoran.podcasts.viewAdapters.channelGridView.ChannelViewAdapter;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -113,11 +117,13 @@ public class MainActivity extends AppCompatActivity
         EditText textField = (EditText) findViewById(R.id.editText2);
         String text = textField.getText().toString();
         // Example to search itunes
-        ProgressBar progerssBarMain = findViewById(R.id.progressBarSearchMain);
-        WebProvider webProvider = new WebProvider();
+        GridView gridView = (GridView)findViewById(R.id.ChannelGridViewResult);
 
-        webProvider.addITunesArgument(text);
-        ITunesMessage result = webProvider.performQueryOverITunes();
+        ChannelAndPodCastsGuiInflater manager = new ChannelAndPodCastsGuiInflater(gridView);
+        manager.addChannelQueryParameter(text);
+
+        QueryTaskParameters taskParameters = new QueryTaskParameters(QueryTaskParameters.QUERY_OVER_ITUNES, gridView, this);
+        manager.execute(taskParameters);
 
         //TODO Navegacion con https://codelabs.developers.google.com/codelabs/android-navigation/#0
 
