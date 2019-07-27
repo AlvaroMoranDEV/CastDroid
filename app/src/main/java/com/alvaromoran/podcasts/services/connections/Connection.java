@@ -79,8 +79,6 @@ public abstract class Connection {
     }
 
 
-
-
     abstract public MessageContainer performQuery();
 
     /**

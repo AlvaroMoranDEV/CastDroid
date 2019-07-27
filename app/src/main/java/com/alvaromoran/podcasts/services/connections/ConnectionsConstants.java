@@ -96,4 +96,15 @@ public final class ConnectionsConstants {
     public static final String MAIN_ITUNES_URL = "https://itunes.apple.com/search?";
 
 //endregion
+
+    public static final String GENERIC_START_TAG = "xml";
+    public static final String GENERIC_RSS_TAG = "rss";
+    public static final String GENERIC_CHANNEL_TAG = "channel";
+    public static final String GENERIC_SUMMARY_TAG = "summary";
+    public static final String GENERIC_COPYRIGHT_TAG = "copyright";
+    public static final String GENERIC_LINK_TAG = "link";
+    public static final String GENERIC_ITEM_TAG = "item";
+
+
+
 }

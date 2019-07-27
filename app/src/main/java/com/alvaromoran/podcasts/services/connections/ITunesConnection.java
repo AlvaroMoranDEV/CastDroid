@@ -58,13 +58,9 @@ public class ITunesConnection extends Connection {
                 serverConnection.disconnect();
             }
         }
-        return messageParsing(result);
-    }
 
-    private MessageContainer messageParsing(String result) {
-        // Parses the returned message into an object
-        ITunesMessage itunesMessage = new ITunesMessage();
-        itunesMessage.setFullMessage(result);
+        // Message parsing
+        MessageContainer itunesMessage = new ITunesMessage(result);
         itunesMessage.parseMessage();
         storeLastResponse(itunesMessage);
         return itunesMessage;

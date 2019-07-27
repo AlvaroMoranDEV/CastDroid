@@ -1,15 +1,18 @@
 package com.alvaromoran.podcasts.services.connections.templates;
 
-public interface MessageContainer {
+public abstract class MessageContainer {
 
-    void setFullMessage(String fullMessage);
+    private final String fullMessage;
 
-    int getNumberOfItems();
+    public MessageContainer(String fullMessage) {
+        this.fullMessage = fullMessage;
+    }
 
-    String getFullMessage();
+    public String getFullMessage() {
+        return this.fullMessage;
+    }
 
-    Object parseMessage();
+    public abstract int getNumberOfItems();
 
-    Object getSingleResult(int id);
-
+    public abstract Object parseMessage();
 }

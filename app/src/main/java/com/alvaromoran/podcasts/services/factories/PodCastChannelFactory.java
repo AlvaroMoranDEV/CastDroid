@@ -37,8 +37,11 @@ public class PodCastChannelFactory {
 
         PodCastChannel parsedChannel = null;
         Result receivedChannel = (Result) objectInformation;
-        parsedChannel = new PodCastChannelNet(receivedChannel.collectionName);
-        // TODO
+        // Only title, feed and collection name will be filled since the most important information
+        // is retrieved when performing the connection over the channel feed
+        parsedChannel = new PodCastChannelNet(receivedChannel.artistName);
+        parsedChannel.setCollectionName(receivedChannel.collectionName);
+
         return parsedChannel;
     }
 

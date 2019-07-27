@@ -4,31 +4,17 @@ import com.alvaromoran.podcasts.services.connections.templates.iTunes.JsonITunes
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-public class ITunesMessage implements MessageContainer {
-
-    private String fullMessage;
+public class ITunesMessage extends MessageContainer {
 
     private JsonITunesRoot parsedMessage;
 
-    public ITunesMessage() {
-
+    public ITunesMessage(String fullMessage) {
+        super(fullMessage);
     }
-
-
-    @Override
-    public void setFullMessage(String fullMessage) {
-        this.fullMessage = fullMessage;
-    }
-
 
     @Override
     public int getNumberOfItems() {
         return this.parsedMessage.resultCount;
-    }
-
-    @Override
-    public String getFullMessage() {
-        return this.fullMessage;
     }
 
     @Override
@@ -38,13 +24,8 @@ public class ITunesMessage implements MessageContainer {
         } else {
             // Parses the message
             Gson jsonDeserializer = new GsonBuilder().create();
-            this.parsedMessage = jsonDeserializer.fromJson(this.fullMessage, JsonITunesRoot.class);
+            this.parsedMessage = jsonDeserializer.fromJson(getFullMessage(), JsonITunesRoot.class);
             return this.parsedMessage;
         }
-    }
-
-    @Override
-    public Object getSingleResult(int id) {
-        return null;
     }
 }

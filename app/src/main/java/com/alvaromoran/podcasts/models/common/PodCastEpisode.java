@@ -15,6 +15,11 @@ public abstract class PodCastEpisode implements Listenable, Comparable<PodCastEp
     private String episodeName;
 
     /**
+     * Subtitule of the episode
+     */
+    private String episodeSubtitle;
+
+    /**
      * Name of the author
      */
     private String author;
@@ -33,6 +38,16 @@ public abstract class PodCastEpisode implements Listenable, Comparable<PodCastEp
      * URL where the episode is stored in the net
      */
     private String urlFeed;
+
+    /**
+     * Description of the current episode
+     */
+    private String description;
+
+    /**
+     * Language of the podcast episode
+     */
+    private String language;
 
     /**
      * Flag to check if the episode is being listened
@@ -162,6 +177,32 @@ public abstract class PodCastEpisode implements Listenable, Comparable<PodCastEp
     public String getEpisodeName() {
         return episodeName;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
+
+    public String getEpisodeSubtitle() {
+        return episodeSubtitle;
+    }
+
+    public void setEpisodeSubtitle(String episodeSubtitle) {
+        this.episodeSubtitle = episodeSubtitle;
+    }
+
 
     // endregion
 }
