@@ -21,6 +21,11 @@ import com.alvaromoran.podcasts.viewAdapters.channelGridView.ChannelViewAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class that serves as bridge between the GUI to be updated and the connection services managed
+ * by the web provider. This class will create needed threads to execute queries over the internet
+ * and to updated the UI with the response
+ */
 public class ChannelAndPodCastsGuiInflater extends AsyncTask<QueryTaskParameters, Void, List<PodCastChannel>> {
 
     private WebProvider webProvider;
@@ -75,6 +80,9 @@ public class ChannelAndPodCastsGuiInflater extends AsyncTask<QueryTaskParameters
             this.taskPerformed = taskInformation[0];
             this.viewToBeUpdated = taskInformation[0].getGraphicElement();
             if (this.taskPerformed.getTypeOfQuery() == QueryTaskParameters.QUERY_OVER_CHANNEL) {
+                // Fill episodes information
+
+                // Complete channel information with hints from the feed
 
             } else if (this.taskPerformed.getTypeOfQuery() == QueryTaskParameters.QUERY_OVER_ITUNES) {
                 listOfChannels = performChannelQuery();

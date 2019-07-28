@@ -7,20 +7,6 @@ package com.alvaromoran.podcasts.models.common;
 public interface Listenable {
 
     /**
-     * Direction where the audio is located. This URL might be a local path or a URL
-     *
-     * @param urlFeed direction where the audio is located
-     */
-    void addUrlFeed(String urlFeed);
-
-    /**
-     * Gets the direction where the audio is located
-     *
-     * @return direction where the audio is located
-     */
-    String getUrlFeed();
-
-    /**
      * Gets if the audio is currently being played or not
      *
      * @return <code>true</code> if the audio is being listened, <code>false</code> otherwise
