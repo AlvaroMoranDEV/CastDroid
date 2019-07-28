@@ -14,7 +14,7 @@ public interface Storable {
      *
      * @return Id of the stored element
      */
-    int getElementPersistentId();
+    String getElementPersistentId();
 
     /**
      * Sets the last time that the element was accessed and used by the application
