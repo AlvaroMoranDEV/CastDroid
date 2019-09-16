@@ -1,46 +1,43 @@
 package com.alvaromoran.podcasts.services.factories;
 
-import com.alvaromoran.podcasts.models.common.PodCastChannel;
-import com.alvaromoran.podcasts.models.netModels.PodCastChannelNet;
-import com.alvaromoran.podcasts.models.storedModels.PodCastChannelStored;
-import com.alvaromoran.podcasts.services.connections.templates.iTunes.Result;
+import com.alvaromoran.podcasts.models.PodCastChannel;
+import com.alvaromoran.podcasts.services.dataAccess.data.iTunes.Result;
+import com.alvaromoran.podcasts.services.dataAccess.storage.internalStorage.templates.PodCastChannelXml;
 
 public class PodCastChannelFactory {
 
-    public static final int PODCAST_CHANNEL_STORED = 0;
-    public static final int PODCAST_CHANNEL_NET = 1;
-    public static final int PODCAST_CHANNEL_RECOMMENDED = 2;
+    private PodCastChannelFactory() {
+        throw new UnsupportedOperationException();
+    }
 
-
-    public PodCastChannel createPodCastChannel(int podCastChannelType, Object objectInformation) {
-
+    public static PodCastChannel createPodCastChannel(Object baseInformation) {
         PodCastChannel createdChannel = null;
-
-        if (podCastChannelType == PODCAST_CHANNEL_STORED && objectInformation instanceof PodCastChannelStored) {
-            createdChannel = createPodCastChannelStored(objectInformation);
-        } else if (podCastChannelType == PODCAST_CHANNEL_NET || podCastChannelType == PODCAST_CHANNEL_RECOMMENDED && objectInformation instanceof Result) {
-            createdChannel = createPodCastChannelNet(objectInformation);
-        } else {
-            createdChannel = null;
+        if (baseInformation != null) {
+            if (baseInformation instanceof Result) {
+                createdChannel = createPodCastChannelFromNet((Result) baseInformation);
+            } else if (baseInformation instanceof PodCastChannelXml) {
+                createdChannel = createPodCastChannelFromInternalStorage((PodCastChannelXml) baseInformation);
+            } else {
+                createdChannel = null;
+            }
         }
         return createdChannel;
     }
 
-    private PodCastChannel createPodCastChannelStored(Object objectInformation) {
-
-        PodCastChannel parsedChannel = null;
-        // TODO
+    private static PodCastChannel createPodCastChannelFromNet(Result baseInformation) {
+        PodCastChannel parsedChannel = new PodCastChannel(baseInformation.artistName);
+        parsedChannel.setCollectionName(baseInformation.collectionName);
+        parsedChannel.setFeedUrl(baseInformation.feedUrl);
+        parsedChannel.setUrlImage(baseInformation.artworkUrl600);
+        parsedChannel.setCountry(baseInformation.country);
+        if (baseInformation.genreIds != null) {
+            baseInformation.genreIds.forEach(genre -> parsedChannel.addChannelTag(genre));
+        }
         return parsedChannel;
     }
 
-    private PodCastChannel createPodCastChannelNet(Object objectInformation) {
-
-        PodCastChannel parsedChannel = null;
-        Result receivedChannel = (Result) objectInformation;
-        parsedChannel = new PodCastChannelNet(receivedChannel.collectionName);
-        // TODO
-        return parsedChannel;
+    private static PodCastChannel createPodCastChannelFromInternalStorage(PodCastChannelXml baseInformation) {
+        return null;
     }
-
 
 }

@@ -57,12 +57,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0144cfc8-7de0-4f2a-9f98-cf5aa28d0b1f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_extensions_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/IChannelPodCasts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/PodCastInfoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/TaskParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/TaskReturn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/TaskWebExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/storage/internalStorage/StorageConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/storage/internalStorage/StorageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/storage/internalStorage/templates/PodCastChannelXml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/storage/internalStorage/templates/PodCastEpisodeXml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/discover/DiscoverResultsFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/discover/DiscoverSearchFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/discover/DiscoverViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/main/PageViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/main/PlaceholderFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/main/SectionsPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/discover_activity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_discover_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_discover_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/Listenable.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/Listenable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/Storable.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/Storable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/DiscoverActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/DiscoverActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/Listenable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/PodCastChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/PodCastChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/PodCastEpisode.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/PodCastEpisode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/Storable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/graphicInterface/ChannelSingleItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/netModels/PodCastChannelNet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/netModels/PodCastChannelRecommended.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/controllers/ChannelAndPodCastsGuiInflater.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/controllers/ChannelAndPodCastsGuiInflater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/controllers/QueryTaskParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/controllers/QueryTaskParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/netModels/PodCastEpisodeNet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/storedModels/PodCastChannelStored.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/storedModels/PodCastEpisodeStored.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/ConnectionsConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/ConnectionsConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/GenericImageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/GenericImageLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/ITunesConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/PodCastChannelConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/WebProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/GenericPodCastMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/data/GenericPodCastMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/ITunesMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/data/ITunesMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/MessageContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/data/MessageContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/Channel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/XmlRoot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/enclosure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/image.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/link.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/owner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/iTunes/JsonITunesRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/data/iTunes/JsonITunesRoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/iTunes/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/data/iTunes/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/controllers/ChannelAndPodCastsGuiInflater.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/controllers/QueryTaskParameters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/factories/PodCastChannelFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/factories/PodCastChannelFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/factories/PodCastEpisodeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/factories/PodCastEpisodeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/storage/StorageConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/storage/StorageProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/viewAdapters/channelGridView/ChannelViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/viewAdapters/channelGridView/ChannelViewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_discover.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/channel_list_grid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/channel_list_grid.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,38 +151,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/GenericPodCastMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/XmlRoot.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/discover/DiscoverResultsFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="221">
+              <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/PodCastChannelConnection.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/DiscoverActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/ITunesConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="323">
+              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="95" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,30 +173,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/controllers/QueryTaskParameters.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/discover/DiscoverSearchFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1285#1286#0" expanded="true" />
-                <element signature="e#1319#1320#0" expanded="true" />
-                <element signature="e#1365#1366#0" expanded="true" />
-                <element signature="e#1402#1403#0" expanded="true" />
-                <element signature="e#1452#1453#0" expanded="true" />
-                <element signature="e#1490#1491#0" expanded="true" />
-                <element signature="e#1660#1661#0" expanded="true" />
-                <element signature="e#1706#1707#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/controllers/ChannelAndPodCastsGuiInflater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="1377">
+              <caret line="91" column="62" selection-start-line="91" selection-start-column="62" selection-end-line="91" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,10 +185,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/WebProvider.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/discover/DiscoverViewModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="187">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,28 +197,64 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/Storable.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-277">
-              <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="1377">
+              <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/Listenable.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/PodCastInfoDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="1224">
+              <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/PodCastChannel.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/TaskWebExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-561">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="2295">
+              <caret line="159" column="13" selection-start-line="159" selection-start-column="13" selection-end-line="159" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/IChannelPodCasts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/TaskParameters.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/TaskReturn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -198,8 +268,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -214,6 +284,19 @@
       <find>;</find>
       <find>parsedMessage</find>
       <find>post</find>
+      <find>querytas</find>
+      <find>performChannelQuery</find>
+      <find>item</find>
+      <find>episodeTitle</find>
+      <find>summary</find>
+      <find>parsedEpisodes</find>
+      <find>performtask</find>
+      <find>taskPerformed</find>
+      <find>channelsReturned</find>
+      <find>podCastChannelConnection</find>
+      <find>taskParameters</find>
+      <find>taskExecuted</find>
+      <find>activeView</find>
     </findStrings>
     <replaceStrings>
       <replace>String</replace>
@@ -240,57 +323,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/factories/PodCastEpisodeFactory.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/storage/StorageConstants.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/MessageContainer.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/Channel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/Category.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/Enclosure.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/Image.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/Item.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/Link.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/Owner.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/XmlPodCastChannel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/ConnectionsConstants.java" />
-        <option value="$PROJECT_DIR$/gradle.properties" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/local.properties" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/adapters/ChannelViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/viewAdapters/ChannelViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/viewAdapters/ChannelGridView/ChannelViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/viewAdapters/channelGridView/ChannelSingleItem.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/CustomGrids/channel_list_grid.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/ITunesMessage.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/PodCastChannel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/XmlRoot.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/GenericPodCastMessage.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/graphicInterface/ChannelSingleItem.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/generic/ChannelAndPodCastsManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/generic/ChannelAndPodCastsManagerGuiManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/generic/ChannelAndPodCastsGuiManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/generic/ChannelAndPodCastsGuiInflatorControler.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/generic/ChannelAndPodCastsGuiInflatorController.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/generic/l.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/generic/ChannelAndPodCastsGuiControler.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/generic/ChannelAndPodCastsGuiController.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/generic/ChannelAndPodCastsGuiInflater.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/QueryTaskParameters.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/Query.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/Connection.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/ITunesConnection.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/PodCastChannelConnection.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/WebProvider.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/DAOs/PodCastInfoDAO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/utils/XmlPodCastParser.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/PodCastEpisode.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/utils/PodCastEpisodeFactory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/PodCastChannel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/viewAdapters/channelGridView/ChannelViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/utils/PodCastChannelFactory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/QueryTaskParameters.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/IViewToBeUpdated.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/WebProvider.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/WebTaskExecutor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/PodCastTaskExecutor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/PodCastChannelConnection.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/AccessNetTask.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/Connection.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/ITunesTaskExecutor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/TaskExecutor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/WebConnection.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/ChannelConnection.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/ITunesConnection.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/data/MessageContainer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/data/ITunesMessage.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/ConnectionsConstants.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/data/GenericPodCastMessage.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/factories/PodCastEpisodeFactory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_channel.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_discover.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_discover.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/UpdateFromTask.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/UIUpdatedFromViewModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/channel_list_grid.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/GenericImageLoader.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/Listenable.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/Storable.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/controllers/QueryTaskParameters.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/controllers/ChannelAndPodCastsGuiInflater.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/discover_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/discover/DiscoverFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/discover_search_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/discover_results_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_discover_results.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/discover_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ChannelActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/DiscoverActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_discover_search.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/TaskParameters.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/IChannelPodCasts.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/PodCastInfoDAO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/TaskReturn.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/TaskWebExecutor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/discover/DiscoverViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/discover/DiscoverSearchFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/discover/DiscoverResultsFragment.java" />
       </list>
     </option>
   </component>
@@ -310,70 +393,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CastDroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastDroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastDroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastDroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastDroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastDroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastDroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastDroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastDroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastDroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastDroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastDroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastDroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastDroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AndroidProjects" type="58d84e3e:PackageViewProjectNode" />
-              <item name="app" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -397,31 +416,7 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="podcasts" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastDroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="podcasts" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastDroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="podcasts" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="netModels" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastDroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="podcasts" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="storedModels" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CastDroid" type="1abcf292:AndroidViewProjectNode" />
@@ -429,11 +424,81 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="podcasts" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="dataAccess" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CastDroid" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="podcasts" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="dataAccess" type="462c0819:PsiDirectoryNode" />
+              <item name="connections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CastDroid" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="podcasts" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CastDroid" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="podcasts" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="discover" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CastDroid" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="CastDroid" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AndroidProjects" type="58d84e3e:PackageViewProjectNode" />
+              <item name="app" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CastDroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CastDroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="CastDroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CastDroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="CastDroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CastDroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,6 +507,7 @@
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="xml.defaultSchemas" />
   </component>
   <component name="PsdUISettings">
@@ -449,11 +515,17 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.alvaromoran.podcasts.services.information" />
+      <recent name="com.alvaromoran.podcasts.models" />
       <recent name="com.alvaromoran.podcasts.services.controllers" />
       <recent name="com.alvaromoran.podcasts.models.graphicInterface" />
       <recent name="com.alvaromoran.podcasts.viewAdapters.ChannelGridView" />
-      <recent name="com.alvaromoran.podcasts.viewAdapters" />
-      <recent name="com.alvaromoran.podcasts.services.storage" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.alvaromoran.podcasts" />
+    </key>
+    <key name="android.template.parentActivityClass">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\AndroidProjects\CastDroid\app\src\main\res\layout" />
@@ -585,27 +657,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20953101" />
-      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.5550756" visible="true" weight="0.25416037" />
+      <window_info id="Structure" order="2" sideWeight="0.4449244" side_tool="true" visible="true" weight="0.25416037" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Build Variants" order="4" sideWeight="0.4298056" side_tool="true" weight="0.25416037" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" weight="0.32980332" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49546143" weight="0.32850242" />
       <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49924356" weight="0.32850242" />
-      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49848714" weight="0.32850242" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.494705" visible="true" weight="0.33333334" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.4977307" weight="0.32850242" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50226927" weight="0.28663447" />
-      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49924356" weight="0.32850242" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4977307" weight="0.35748792" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" visible="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49848714" weight="0.32569557" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.494705" weight="0.2487725" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.4977307" weight="0.32569557" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50226927" weight="0.28641573" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49924356" weight="0.32733223" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4977307" visible="true" weight="0.24222586" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.2487725" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32850242" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -617,7 +689,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2730711" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.20953101" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -625,16 +697,17 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" weight="0.32980332" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49924356" weight="0.32850242" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32850242" />
-      <window_info anchor="bottom" id="TODO" order="2" weight="0.32850242" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33333334" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32850242" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50075644" side_tool="true" weight="0.32850242" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.28663447" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49546143" weight="0.32850242" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49924356" weight="0.32850242" />
+      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49848714" weight="0.32850242" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.494705" weight="0.33333334" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.4977307" weight="0.32850242" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50226927" weight="0.28663447" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49924356" weight="0.32850242" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4977307" weight="0.35748792" />
       <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.32850242" />
+      <window_info active="true" anchor="bottom" id="Find" order="9" visible="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32850242" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -690,18 +763,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="XML Channel code updated - Logs added" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/viewAdapters/channelGridView/ChannelViewAdapter.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
@@ -712,412 +773,350 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/link.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/owner.java" />
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/PodCastChannel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_discover.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/iTunes/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="1520">
+          <caret line="247" column="24" selection-start-line="247" selection-start-column="24" selection-end-line="247" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5829#5830#0" expanded="true" />
+            <element signature="e#5861#5862#0" expanded="true" />
+            <element signature="e#5911#5912#0" expanded="true" />
+            <element signature="e#5953#5954#0" expanded="true" />
+            <element signature="e#5987#5988#0" expanded="true" />
+            <element signature="e#6017#6018#0" expanded="true" />
+            <element signature="e#6063#6064#0" expanded="true" />
+            <element signature="e#6101#6102#0" expanded="true" />
+            <element signature="e#6132#6133#0" expanded="true" />
+            <element signature="e#6159#6160#0" expanded="true" />
+            <element signature="e#6199#6200#0" expanded="true" />
+            <element signature="e#6231#6232#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/widget/AdapterView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="120">
+          <caret line="265" column="21" selection-start-line="265" selection-start-column="21" selection-end-line="265" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/storage/StorageManager.java">
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/alvaromoran/podcasts/BuildConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="107" column="13" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
+        <state relative-caret-position="51">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/storage/StorageProvider.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/AccessNetTask.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/PodCastTaskExecutor.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/ITunesTaskExecutor.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/IViewToBeUpdated.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/GenericImageLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/iTunes/JsonITunesRoot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/graphicInterface/ChannelSingleItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="238">
+          <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/DiscoverActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/Connection.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/WebConnection.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/ITunesConnection.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/ChannelConnection.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/data/ITunesMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6db51e78f269498a3992949dd10c1d6/jars/classes.jar!/android/support/v7/app/AppCompatViewInflater.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="394" column="44" selection-start-line="394" selection-start-column="36" selection-end-line="394" selection-end-column="44" />
+        <state relative-caret-position="190">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/factories/PodCastChannelFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="137">
+          <caret line="12" column="76" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/MessageContainer.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/ConnectionsConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="173">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/ITunesMessage.java">
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/org/xmlpull/v1/XmlPullParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-9">
+          <caret line="161" column="17" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/app/libs/gson-2.6.2.jar!/com/google/gson/GsonBuilder.class">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/data/MessageContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="204">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/widget/GridView.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.kxml/kxml2/2.3.0/309cd2cff7260e465792fda3dcbb063b730d8050/kxml2-2.3.0-sources.jar!/org/kxml2/io/KXmlParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+        <state relative-caret-position="120">
+          <caret line="312" selection-start-line="312" selection-end-line="312" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/ConnectionsConstants.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/PodCastEpisode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="-26">
+          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/Query.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/Connection.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/factories/PodCastEpisodeFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        <state relative-caret-position="244">
+          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/util/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="248" column="7" lean-forward="true" selection-start-line="248" selection-start-column="7" selection-end-line="248" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Looper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="209" column="33" selection-start-line="209" selection-start-column="33" selection-end-line="209" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/AsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="717" selection-start-line="717" selection-end-line="717" />
+        <state relative-caret-position="86">
+          <caret line="332" selection-start-line="332" selection-end-line="332" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/view/ViewRootImpl.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/data/GenericPodCastMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="2719" selection-start-line="2719" selection-end-line="2719" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/view/Choreographer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="766" selection-start-line="766" selection-end-line="766" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="53" column="46" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="117" column="53" selection-start-line="117" selection-start-column="53" selection-end-line="117" selection-end-column="53" />
+        <state relative-caret-position="86">
+          <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#6430#6431#0" expanded="true" />
+            <element signature="e#6469#6470#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/viewAdapters/channelGridView/ChannelViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/channel_fragmen.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/channel_activity.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/UpdateUIFromViewModel.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/main/PlaceholderFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/main/PageViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/main/SectionsPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/discover_search_fragment.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/discover_results.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ChannelActivity.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/channel_list_grid.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#359#399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/discover_activity.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#395#435#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_discover_results.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_discover_search.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="e#686#702#0" expanded="true" />
+            <element signature="e#1177#1191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/discover/DiscoverResultsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/viewAdapters/channelGridView/ChannelViewAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/DiscoverActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="323">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="95" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/widget/AbsListView.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/discover/DiscoverSearchFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="2365" selection-start-line="2365" selection-end-line="2365" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/GenericImageLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="1377">
+          <caret line="91" column="62" selection-start-line="91" selection-start-column="62" selection-end-line="91" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1294#1295#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/PodCastEpisode.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/ui/discover/DiscoverViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state relative-caret-position="187">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#1404#1405#0" expanded="true" />
-            <element signature="e#1442#1443#0" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-            <element signature="e#1789#1790#0" expanded="true" />
-            <element signature="e#1843#1844#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
-            <element signature="e#1940#1941#0" expanded="true" />
-            <element signature="e#1983#1984#0" expanded="true" />
-            <element signature="e#2046#2047#0" expanded="true" />
-            <element signature="e#2093#2094#0" expanded="true" />
-            <element signature="e#2952#2953#0" expanded="true" />
-            <element signature="e#2981#2982#0" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
-            <element signature="e#3061#3062#0" expanded="true" />
-            <element signature="e#3100#3101#0" expanded="true" />
-            <element signature="e#3138#3139#0" expanded="true" />
-            <element signature="e#3197#3198#0" expanded="true" />
-            <element signature="e#3251#3252#0" expanded="true" />
-            <element signature="e#3287#3288#0" expanded="true" />
-            <element signature="e#3321#3322#0" expanded="true" />
-            <element signature="e#3373#3374#0" expanded="true" />
-            <element signature="e#3419#3420#0" expanded="true" />
-            <element signature="e#3456#3457#0" expanded="true" />
-            <element signature="e#3492#3493#0" expanded="true" />
-            <element signature="e#3530#3531#0" expanded="true" />
-            <element signature="e#3564#3565#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/netModels/PodCastEpisodeNet.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/PodCastInfoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/connections/TaskWebExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="159" column="13" selection-start-line="159" selection-start-column="13" selection-end-line="159" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/IChannelPodCasts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/TaskParameters.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/netModels/PodCastChannelNet.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/dataAccess/TaskReturn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/PodCastChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="187">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/Storable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-277">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/models/common/Listenable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/controllers/QueryTaskParameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1285#1286#0" expanded="true" />
-            <element signature="e#1319#1320#0" expanded="true" />
-            <element signature="e#1365#1366#0" expanded="true" />
-            <element signature="e#1402#1403#0" expanded="true" />
-            <element signature="e#1452#1453#0" expanded="true" />
-            <element signature="e#1490#1491#0" expanded="true" />
-            <element signature="e#1660#1661#0" expanded="true" />
-            <element signature="e#1706#1707#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/WebProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/controllers/ChannelAndPodCastsGuiInflater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/PodCastChannelConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/ITunesConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/GenericPodCastMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alvaromoran/podcasts/services/connections/templates/generic/XmlRoot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>

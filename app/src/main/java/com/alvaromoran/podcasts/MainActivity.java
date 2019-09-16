@@ -1,9 +1,6 @@
 package com.alvaromoran.podcasts;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
@@ -13,19 +10,20 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import android.widget.AdapterView;
-import android.widget.EditText;
-import android.widget.GridView;
 
-import com.alvaromoran.podcasts.models.common.PodCastChannel;
-import com.alvaromoran.podcasts.services.controllers.ChannelAndPodCastsGuiInflater;
-import com.alvaromoran.podcasts.services.controllers.QueryTaskParameters;
-import com.alvaromoran.podcasts.viewAdapters.channelGridView.ChannelViewAdapter;
+import com.alvaromoran.podcasts.models.PodCastChannel;
+import com.alvaromoran.podcasts.services.dataAccess.IChannelPodCasts;
 
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+
+
+
+    private IChannelPodCasts manager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,15 +32,6 @@ public class MainActivity extends AppCompatActivity
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
 
@@ -53,6 +42,7 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -110,22 +100,5 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    public void testFilter(View view) {
-
-        EditText textField = (EditText) findViewById(R.id.editText2);
-        String text = textField.getText().toString();
-        // Example to search itunes
-        GridView gridView = (GridView)findViewById(R.id.ChannelGridViewResult);
-
-        ChannelAndPodCastsGuiInflater manager = new ChannelAndPodCastsGuiInflater(gridView);
-        manager.addChannelQueryParameter(text);
-
-        QueryTaskParameters taskParameters = new QueryTaskParameters(QueryTaskParameters.QUERY_OVER_ITUNES, gridView, this);
-        manager.execute(taskParameters);
-
-        //TODO Navegacion con https://codelabs.developers.google.com/codelabs/android-navigation/#0
-
     }
 }
