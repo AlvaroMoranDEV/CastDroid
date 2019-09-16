@@ -9,10 +9,9 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.alvaromoran.podcasts.MainActivity;
 import com.alvaromoran.podcasts.R;
-import com.alvaromoran.podcasts.models.common.PodCastChannel;
-import com.alvaromoran.podcasts.services.connections.GenericImageLoader;
+import com.alvaromoran.podcasts.models.PodCastChannel;
+import com.alvaromoran.podcasts.services.dataAccess.connections.GenericImageLoader;
 
 import java.util.List;
 
@@ -55,9 +54,9 @@ public class ChannelViewAdapter extends BaseAdapter {
             convertView = inflater.inflate(R.layout.channel_list_grid, null);
         }
 
-        final ImageView channelImage = (ImageView) convertView.findViewById(R.id.channel_image);
-        final TextView channelTitle = (TextView) convertView.findViewById(R.id.channel_title);
-        final TextView channelDescription = (TextView) convertView.findViewById(R.id.channel_description);
+        final ImageView channelImage = convertView.findViewById(R.id.channel_image);
+        final TextView channelTitle = convertView.findViewById(R.id.channel_title);
+        final TextView channelDescription = convertView.findViewById(R.id.channel_description);
 
         GenericImageLoader imageLoader = new GenericImageLoader(channelImage);
         imageLoader.execute(podcastChannel.getUrlImage());
