@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.castdroid.MainActivity">
+
+    <item
+        android:id="@+id/navigate_to_home"
+        android:title="@string/navigation_home"
+        android:icon="@drawable/ic_navigation_home_24dp" />
+
+    <item
+        android:id="@+id/navigate_to_discover"
+        android:title="@string/navigation_discover"
+        android:icon="@drawable/ic_navigation_discover_24dp" />
+
+    <item
+        android:id="@+id/navigate_to_my_casts"
+        android:title="@string/navigation_my_casts"
+        android:icon="@drawable/ic_navigation_my_casts_24dp" />
+
+</menu>
