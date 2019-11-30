@@ -4,4 +4,9 @@
     <string name="navigation_discover">Discover</string>
     <string name="navigation_my_casts">My Casts</string>
 
+    <string name="home_welcome">Bienvenido!</string>
+    <string name="home_mySubs">Mis suscripciones</string>
+    <string name="home_recom">Recomendados</string>
+    <string name="home_themes">Por temas</string>
+
 </resources>
