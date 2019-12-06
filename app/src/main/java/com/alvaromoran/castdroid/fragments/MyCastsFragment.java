@@ -1,4 +1,4 @@
-package com.example.castdroid.fragments;
+package com.alvaromoran.castdroid.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,13 +9,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.castdroid.R;
+import com.alvaromoran.castdroid.R;
 
-public class DiscoverFragment extends Fragment {
+public class MyCastsFragment extends Fragment {
+
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_discover, null);
+        return inflater.inflate(R.layout.fragment_my_casts, null);
     }
 }

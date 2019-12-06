@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Card view list -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/channelsCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/default_imageRadius">
+
+        <!-- Layout for the list of cards-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_cardPadding">
+
+            <!-- Layout for each card -->
+            <ImageView
+                android:layout_width="@dimen/default_cardImageSize"
+                android:layout_height="@dimen/default_cardImageSize"
+                android:scaleType="fitXY"
+                android:id="@+id/cardChannelImage"
+                android:contentDescription="@string/description_placeholder" />
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="12dp"
+                android:id="@+id/cardChannelTitle"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textAppearance="@style/TextCardTitle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:id="@+id/cardChannelAuthor"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textAppearance="@style/TextCardAuthor" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package com.example.castdroid;
+package com.alvaromoran.castdroid;
 
 import org.junit.Test;
 

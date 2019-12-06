@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/episodeListImage"
+        android:layout_width="@dimen/episode_image_size"
+        android:layout_height="@dimen/episode_image_size"
+        android:layout_marginTop="@dimen/default_margin_list"
+        android:layout_marginBottom="@dimen/default_margin_list"
+        android:layout_marginLeft="@dimen/default_margin"
+        />
+    
+    <TextView
+        android:id="@+id/episodeListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/episode_title_height"
+        android:layout_alignTop="@+id/episodeListImage"
+        android:layout_toRightOf="@id/episodeListImage"
+        android:layout_toLeftOf="@id/episodeButtonDownload"
+        android:layout_marginLeft="@dimen/default_margin_list"
+        android:layout_marginRight="@dimen/default_margin_list"
+        />
+
+    <TextView
+        android:id="@+id/episodeListChannel"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/episodeListTitle"
+        android:layout_height="@dimen/episode_channel_height"
+        android:layout_toRightOf="@id/episodeListImage"
+        android:layout_toLeftOf="@id/episodeButtonDownload"
+        android:layout_marginTop="@dimen/default_margin_list"
+        android:layout_marginLeft="@dimen/default_margin_list"
+        android:layout_marginRight="@dimen/default_margin_list"
+        />
+
+
+    <ImageButton
+        android:id="@+id/episodeButtonPlaylist"
+        android:layout_width="@dimen/episode_button_size"
+        android:layout_height="@dimen/episode_button_size"
+        android:layout_marginTop="@dimen/default_margin_list"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_alignParentEnd="true"
+        />
+
+    <ImageButton
+        android:id="@+id/episodeButtonDownload"
+        android:layout_width="@dimen/episode_button_size"
+        android:layout_height="@dimen/episode_button_size"
+        android:layout_marginTop="@dimen/default_margin_list"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_below="@id/episodeButtonPlaylist"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>
