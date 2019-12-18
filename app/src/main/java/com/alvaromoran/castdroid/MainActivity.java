@@ -5,6 +5,7 @@ import android.os.Bundle;
 import com.alvaromoran.castdroid.fragments.DiscoverFragment;
 import com.alvaromoran.castdroid.fragments.HomeFragment;
 import com.alvaromoran.castdroid.fragments.MyCastsFragment;
+import com.alvaromoran.castdroid.fragments.PlayingFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
@@ -73,6 +74,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 break;
             case R.id.navigate_to_my_casts:
                 fragment = new MyCastsFragment();
+                break;
+            case R.id.navigate_to_playing:
+                fragment = new PlayingFragment();
                 break;
         }
         // Load selected fragment

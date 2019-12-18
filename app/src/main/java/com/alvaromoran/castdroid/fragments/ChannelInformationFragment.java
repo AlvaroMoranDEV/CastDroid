@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.alvaromoran.castdroid.R;
@@ -19,11 +20,12 @@ import com.alvaromoran.castdroid.backend.helpers.DownloadImageInTask;
 import com.alvaromoran.castdroid.backend.services.ChannelInflationService;
 import com.alvaromoran.castdroid.backend.services.ChannelPodCastsUpdates;
 import com.alvaromoran.castdroid.backend.services.RecommendedChannels;
+import com.alvaromoran.castdroid.fragments.adapters.ListEpisodesAdapter;
 
 import java.util.ArrayList;
 
 
-public class ChannelInformation extends Fragment {
+public class ChannelInformationFragment extends Fragment {
 
     private com.alvaromoran.data.ChannelInformation information;
 
@@ -36,9 +38,13 @@ public class ChannelInformation extends Fragment {
 
     private ChannelInflationService channelInflationService;
 
-    public ChannelInformation(com.alvaromoran.data.ChannelInformation information) {
+    public ChannelInformationFragment(com.alvaromoran.data.ChannelInformation information) {
         this.information = information;
         this.channelInflationService = new ChannelInflationService();
+    }
+
+    public com.alvaromoran.data.ChannelInformation getChannelInfo() {
+        return this.information;
     }
 
     @Nullable
@@ -51,21 +57,22 @@ public class ChannelInformation extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         // Create view
         super.onViewCreated(view, savedInstanceState);
-
         // Populate channel with extra info
-        this.channelInflationService.populateChannel(this.information);
+        this.channelInflationService.execute(this);
+    }
 
+    public void populateChannelInformation() {
         // Image populate
-        this.mainChannelImage = view.findViewById(R.id.mainChannelImage);
+        this.mainChannelImage = getView().findViewById(R.id.mainChannelImage);
         DownloadImageInTask imageCreationHelper = new DownloadImageInTask(this.mainChannelImage);
         imageCreationHelper.execute(this.information.getImageUrlHigh());
 
         // Text populate
-        this.mainChannelTitle = view.findViewById(R.id.mainChannelTitle);
-        this.mainChannelAuthor = view.findViewById(R.id.mainChannelAuthor);
-        this.mainChannelCopyright = view.findViewById(R.id.mainChannelCopyright);
-        this.mainChannelCategories = view.findViewById(R.id.mainChannelCategories);
-        this.mainChannelDescription = view.findViewById(R.id.mainChannelDescription);
+        this.mainChannelTitle = getView().findViewById(R.id.mainChannelTitle);
+        this.mainChannelAuthor = getView().findViewById(R.id.mainChannelAuthor);
+        this.mainChannelCopyright = getView().findViewById(R.id.mainChannelCopyright);
+        this.mainChannelCategories = getView().findViewById(R.id.mainChannelCategories);
+        this.mainChannelDescription = getView().findViewById(R.id.mainChannelDescription);
 
         this.mainChannelTitle.setText( this.information.getCollection());
         this.mainChannelAuthor.setText( this.information.getAuthor());
@@ -74,11 +81,9 @@ public class ChannelInformation extends Fragment {
         this.mainChannelDescription.setText( this.information.getDescription());
 
         // Episodes population
-        //mainEpisodesList
-    }
-
-    private void populateChannelInformation() {
-
+        ListView episodesList = getView().findViewById(R.id.mainEpisodesList);
+        ListEpisodesAdapter episodesAdapter = new ListEpisodesAdapter(new ArrayList<>(this.information.getEpisodes()), getContext());
+        episodesList.setAdapter(episodesAdapter);
     }
 
 

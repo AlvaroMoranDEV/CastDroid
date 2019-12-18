@@ -77,5 +77,4 @@ public class HomeFragment extends Fragment {
         this.podcastsRecommendationsInflater.execute(this.adapterRecyclerRecommended);
     }
 
-
 }

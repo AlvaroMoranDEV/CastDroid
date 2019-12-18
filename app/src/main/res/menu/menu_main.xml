@@ -17,4 +17,9 @@
         android:title="@string/navigation_my_casts"
         android:icon="@drawable/ic_navigation_my_casts_24dp" />
 
+    <item
+        android:id="@+id/navigate_to_playing"
+        android:title="@string/navigation_playing"
+        android:icon="@drawable/ic_navigation_my_casts_24dp" />
+
 </menu>

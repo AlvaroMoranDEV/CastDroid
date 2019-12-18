@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -15,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.alvaromoran.castdroid.R;
 import com.alvaromoran.castdroid.backend.helpers.DownloadImageInTask;
+import com.alvaromoran.castdroid.fragments.ChannelInformationFragment;
 import com.alvaromoran.data.ChannelInformation;
 
 import java.util.List;
@@ -52,7 +52,7 @@ public class RecylerChannelAdapter extends RecyclerView.Adapter<RecylerChannelAd
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new com.alvaromoran.castdroid.fragments.ChannelInformation(holder.channelInformation);
+                Fragment fragment = new ChannelInformationFragment(holder.channelInformation);
                 fragmentManager.beginTransaction().replace(R.id.application_frame, fragment).addToBackStack(null).commit();
             }
         });
@@ -72,9 +72,9 @@ public class RecylerChannelAdapter extends RecyclerView.Adapter<RecylerChannelAd
 
         public ChannelViewHolder(@NonNull View itemView) {
             super(itemView);
-            channelName = itemView.findViewById(R.id.cardChannelTitle);
-            channelAuthor =  itemView.findViewById(R.id.cardChannelAuthor);
-            channelImage = itemView.findViewById(R.id.cardChannelImage);
+            this.channelName = itemView.findViewById(R.id.cardChannelTitle);
+            this.channelAuthor =  itemView.findViewById(R.id.cardChannelAuthor);
+            this.channelImage = itemView.findViewById(R.id.cardChannelImage);
         }
 
         public void setFullInformation(ChannelInformation channelInformation) {
