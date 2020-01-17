@@ -13,8 +13,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.alvaromoran.castdroid.R;
-import com.alvaromoran.castdroid.backend.helpers.DownloadImageInTask;
+import com.alvaromoran.castdroid.backend.tasks.UrlToImageTask;
 import com.alvaromoran.castdroid.fragments.ChannelInformationFragment;
+import com.alvaromoran.castdroid.models.Channel;
 import com.alvaromoran.data.ChannelInformation;
 
 import java.util.List;
@@ -22,10 +23,10 @@ import java.util.List;
 public class RecylerChannelAdapter extends RecyclerView.Adapter<RecylerChannelAdapter.ChannelViewHolder>{
 
     private LayoutInflater inflater;
-    private List<ChannelInformation> channelsList;
+    private List<Channel> channelsList;
     private FragmentManager fragmentManager;
 
-    public RecylerChannelAdapter(Context context, List<ChannelInformation> channelsList, FragmentManager fragmentManager) {
+    public RecylerChannelAdapter(Context context, List<Channel> channelsList, FragmentManager fragmentManager) {
         this.inflater = LayoutInflater.from(context);
         this.channelsList = channelsList;
         this.fragmentManager = fragmentManager;
@@ -45,20 +46,20 @@ public class RecylerChannelAdapter extends RecyclerView.Adapter<RecylerChannelAd
     @Override
     public void onBindViewHolder(@NonNull final ChannelViewHolder holder, int position) {
         holder.setFullInformation(this.channelsList.get(position));
-        holder.channelAuthor.setText(this.channelsList.get(position).getAuthor());
-        holder.channelName.setText(this.channelsList.get(position).getCollection());
-        DownloadImageInTask imageCreationHelper = new DownloadImageInTask( holder.channelImage);
-        imageCreationHelper.execute(this.channelsList.get(position).getImageUrlHigh());
+        holder.channelAuthor.setText(this.channelsList.get(position).getChannelAuthor());
+        holder.channelName.setText(this.channelsList.get(position).getChannelTitle());
+        UrlToImageTask imageCreationHelper = new UrlToImageTask( holder.channelImage);
+        imageCreationHelper.execute(this.channelsList.get(position).getImageUrl());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new ChannelInformationFragment(holder.channelInformation);
+                Fragment fragment = ChannelInformationFragment.newInstance(holder.channelInformation);
                 fragmentManager.beginTransaction().replace(R.id.application_frame, fragment).addToBackStack(null).commit();
             }
         });
     }
 
-    public void updateData(List<ChannelInformation> channelsList) {
+    public void updateData(List<Channel> channelsList) {
         this.channelsList.clear();
         this.channelsList.addAll(channelsList);
         this.notifyDataSetChanged();
@@ -68,7 +69,7 @@ public class RecylerChannelAdapter extends RecyclerView.Adapter<RecylerChannelAd
         TextView channelName;
         TextView channelAuthor;
         ImageView channelImage;
-        ChannelInformation channelInformation;
+        Channel channelInformation;
 
         public ChannelViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -77,7 +78,7 @@ public class RecylerChannelAdapter extends RecyclerView.Adapter<RecylerChannelAd
             this.channelImage = itemView.findViewById(R.id.cardChannelImage);
         }
 
-        public void setFullInformation(ChannelInformation channelInformation) {
+        public void setFullInformation(Channel channelInformation) {
             this.channelInformation = channelInformation;
         }
     }

@@ -5,13 +5,11 @@ import android.os.Bundle;
 import com.alvaromoran.castdroid.fragments.DiscoverFragment;
 import com.alvaromoran.castdroid.fragments.HomeFragment;
 import com.alvaromoran.castdroid.fragments.MyCastsFragment;
-import com.alvaromoran.castdroid.fragments.PlayingFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import android.view.MenuItem;
 
@@ -75,20 +73,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case R.id.navigate_to_my_casts:
                 fragment = new MyCastsFragment();
                 break;
-            case R.id.navigate_to_playing:
-                fragment = new PlayingFragment();
-                break;
         }
         // Load selected fragment
         return loadFragment(fragment);
     }
-
-    /*@Override
-    public void onBackPressed(){
-        if (getFragmentManager().getBackStackEntryCount() > 0) {
-            getFragmentManager().popBackStack();
-        } else {
-            super.onBackPressed();
-        }
-    }*/
 }

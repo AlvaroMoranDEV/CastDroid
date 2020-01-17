@@ -3,15 +3,15 @@
     <dimen name="default_paragraph">32dp</dimen>
     <dimen name="default_margin_list">8dp</dimen>
 
-
     <!-- Home card view constants -->
     <dimen name="default_imageRadius">5dp</dimen>
     <dimen name="default_cardPadding">10dp</dimen>
     <dimen name="default_cardImageSize">96dp</dimen>
+    <dimen name="default_categoryWidth">150dp</dimen>
+    <dimen name="default_categoryHeight">90dp</dimen>
 
     <!-- Channel page -->
     <dimen name="channel_page_image">144dp</dimen>
-
 
     <!-- Episodes list -->
     <dimen name="episode_height">80dp</dimen>
@@ -19,6 +19,15 @@
     <dimen name="episode_title_height">40dp</dimen>
     <dimen name="episode_channel_height">22dp</dimen>
     <dimen name="episode_button_size">32dp</dimen>
+
+    <!-- Texts across all app -->
+    <dimen name="text_page_title">20sp</dimen>
+    <dimen name="text_section_title">16sp</dimen>
+    <dimen name="text_paragraph">14sp</dimen>
+    <dimen name="text_item_title">16sp</dimen>
+    <dimen name="text_secondary">14sp</dimen>
+    <dimen name="text_buttons">14dp</dimen>
+    <dimen name="text_input">16dp</dimen>
 
 </resources>
 

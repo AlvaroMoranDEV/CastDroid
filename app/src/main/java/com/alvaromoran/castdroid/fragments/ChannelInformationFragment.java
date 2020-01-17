@@ -1,7 +1,5 @@
 package com.alvaromoran.castdroid.fragments;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -16,35 +14,60 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.alvaromoran.castdroid.R;
-import com.alvaromoran.castdroid.backend.helpers.DownloadImageInTask;
-import com.alvaromoran.castdroid.backend.services.ChannelInflationService;
-import com.alvaromoran.castdroid.backend.services.ChannelPodCastsUpdates;
-import com.alvaromoran.castdroid.backend.services.RecommendedChannels;
+import com.alvaromoran.castdroid.backend.tasks.UrlToImageTask;
+import com.alvaromoran.castdroid.backend.tasks.ChannelInflationTask;
 import com.alvaromoran.castdroid.fragments.adapters.ListEpisodesAdapter;
+import com.alvaromoran.castdroid.models.Channel;
+import com.alvaromoran.castdroid.models.Episode;
+import com.alvaromoran.constants.ChannelAndEpisodesMapArguments;
 
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.function.Function;
 
 
 public class ChannelInformationFragment extends Fragment {
 
-    private com.alvaromoran.data.ChannelInformation information;
+    /**
+     * Parameter name for channel information
+     */
+    private static final String PARAM_CHANNEL = "channelInformation";
 
-    private ImageView mainChannelImage;
-    private TextView mainChannelTitle;
-    private TextView mainChannelAuthor;
-    private TextView mainChannelCopyright;
-    private TextView mainChannelCategories;
-    private TextView mainChannelDescription;
+    /**
+     * Task to get the channel information
+     */
+    private ChannelInflationTask channelInflationTask;
 
-    private ChannelInflationService channelInflationService;
+    /**
+     * Channel model information to be displayed
+     */
+    private Channel channelInformation;
 
-    public ChannelInformationFragment(com.alvaromoran.data.ChannelInformation information) {
-        this.information = information;
-        this.channelInflationService = new ChannelInflationService();
+    /**
+     * Empty constructor
+     */
+    public ChannelInformationFragment( ) {
     }
 
-    public com.alvaromoran.data.ChannelInformation getChannelInfo() {
-        return this.information;
+    /**
+     * Instance generator of these fragments
+     * @param channel related channels to be shown in the UI
+     * @return built fragment
+     */
+    public static ChannelInformationFragment newInstance(Channel channel) {
+        ChannelInformationFragment channelFragment = new ChannelInformationFragment();
+        Bundle arguments = new Bundle();
+        arguments.putParcelable(PARAM_CHANNEL, channel);
+        channelFragment.setArguments(arguments);
+        return channelFragment;
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            this.channelInformation = getArguments().getParcelable(PARAM_CHANNEL);
+        }
     }
 
     @Nullable
@@ -58,33 +81,37 @@ public class ChannelInformationFragment extends Fragment {
         // Create view
         super.onViewCreated(view, savedInstanceState);
         // Populate channel with extra info
-        this.channelInflationService.execute(this);
+        this.channelInflationTask = new ChannelInflationTask();
+        Object[] parameters = {this};
+        this.channelInflationTask.execute(parameters);
     }
 
     public void populateChannelInformation() {
         // Image populate
-        this.mainChannelImage = getView().findViewById(R.id.mainChannelImage);
-        DownloadImageInTask imageCreationHelper = new DownloadImageInTask(this.mainChannelImage);
-        imageCreationHelper.execute(this.information.getImageUrlHigh());
-
+        ImageView mainChannelImage = getView().findViewById(R.id.mainChannelImage);
+        UrlToImageTask imageCreationHelper = new UrlToImageTask(mainChannelImage);
+        imageCreationHelper.execute(this.channelInformation.getImageUrl());
+        // Text references
+        TextView mainChannelTitle = getView().findViewById(R.id.mainChannelTitle);
+        TextView mainChannelAuthor = getView().findViewById(R.id.mainChannelAuthor);
+        TextView mainChannelCopyright = getView().findViewById(R.id.mainChannelCopyright);
+        TextView mainChannelCategories = getView().findViewById(R.id.mainChannelCategories);
+        TextView mainChannelDescription = getView().findViewById(R.id.mainChannelDescription);
         // Text populate
-        this.mainChannelTitle = getView().findViewById(R.id.mainChannelTitle);
-        this.mainChannelAuthor = getView().findViewById(R.id.mainChannelAuthor);
-        this.mainChannelCopyright = getView().findViewById(R.id.mainChannelCopyright);
-        this.mainChannelCategories = getView().findViewById(R.id.mainChannelCategories);
-        this.mainChannelDescription = getView().findViewById(R.id.mainChannelDescription);
-
-        this.mainChannelTitle.setText( this.information.getCollection());
-        this.mainChannelAuthor.setText( this.information.getAuthor());
-        this.mainChannelCopyright.setText( this.information.getCopyright());
-        this.mainChannelCategories.setText( this.information.getCategories().toString());
-        this.mainChannelDescription.setText( this.information.getDescription());
-
+        mainChannelTitle.setText( this.channelInformation.getChannelTitle());
+        mainChannelAuthor.setText( this.channelInformation.getChannelAuthor());
+        mainChannelCopyright.setText( this.channelInformation.getCopyRight());
+        mainChannelCategories.setText( this.channelInformation.getCategories().toString());
+        mainChannelDescription.setText( this.channelInformation.getChannelDescription());
         // Episodes population
-        ListView episodesList = getView().findViewById(R.id.mainEpisodesList);
-        ListEpisodesAdapter episodesAdapter = new ListEpisodesAdapter(new ArrayList<>(this.information.getEpisodes()), getContext());
-        episodesList.setAdapter(episodesAdapter);
+        if (this.channelInformation.getEpisodes() != null) {
+            ListView episodesList = getView().findViewById(R.id.mainEpisodesList);
+            ListEpisodesAdapter episodesAdapter = new ListEpisodesAdapter(getContext(), new ArrayList<Episode>(this.channelInformation.getEpisodes()));
+            episodesList.setAdapter(episodesAdapter);
+        }
     }
 
-
+    public Channel getChannelInformation() {
+        return channelInformation;
+    }
 }

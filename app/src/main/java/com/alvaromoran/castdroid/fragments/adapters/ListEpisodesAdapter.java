@@ -8,41 +8,36 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.alvaromoran.castdroid.R;
-import com.alvaromoran.castdroid.backend.helpers.DownloadImageInTask;
-import com.alvaromoran.data.SingleEpisode;
+import com.alvaromoran.castdroid.backend.tasks.UrlToImageTask;
+import com.alvaromoran.castdroid.models.Episode;
 
 import java.util.List;
 
-public class ListEpisodesAdapter extends ArrayAdapter<SingleEpisode> implements View.OnClickListener {
+public class ListEpisodesAdapter extends ArrayAdapter<Episode> implements View.OnClickListener {
 
-    private List<SingleEpisode> episodesList;
-
-    private Context appContext;
+    private List<Episode> episodesList;
 
     private int lastSelectedPosition = -1;
 
-    public ListEpisodesAdapter(List<SingleEpisode> episodesList, Context context) {
+    public ListEpisodesAdapter(Context context, List<Episode> episodesList) {
         super(context, R.layout.listview_episodes, episodesList);
         this.episodesList = episodesList;
-        this.appContext = context;
     }
 
     @Override
     public void onClick(View clickedView) {
         int position = (Integer) clickedView.getTag();
-        SingleEpisode selectedEpisode = getItem(position);
+        Episode selectedEpisode = getItem(position);
         // TODO
-        System.out.println("Selected episode: " + selectedEpisode.getEpisode());
+        System.out.println("Selected episode: " + selectedEpisode.getTitle());
     }
 
     @Override
     public View getView (int position, View convertView, ViewGroup parent) {
         final View result;
         // Data for current view
-        SingleEpisode episodeView = getItem(position);
+        Episode episodeView = getItem(position);
         // Check if view already exists or inflate it otherwise
         EpisodeViewHolder episodeViewHolder;
 
@@ -53,7 +48,7 @@ public class ListEpisodesAdapter extends ArrayAdapter<SingleEpisode> implements 
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.listview_episodes, parent, false);
             episodeViewHolder.episodeTitle = convertView.findViewById(R.id.episodeListTitle);
-            episodeViewHolder.espidePubDate = convertView.findViewById(R.id.episodeListPubDate);
+            episodeViewHolder.episodePubDate = convertView.findViewById(R.id.episodeListPubDate);
             episodeViewHolder.episodeImage = convertView.findViewById(R.id.episodeListImage);
             convertView.setTag(episodeViewHolder);
             result = convertView;
@@ -65,16 +60,14 @@ public class ListEpisodesAdapter extends ArrayAdapter<SingleEpisode> implements 
         lastSelectedPosition = position;
         // Populate graphic elements referenced
         episodeViewHolder.episodeTitle.setText(episodeView.getTitle());
-        episodeViewHolder.espidePubDate.setText(episodeView.getReleaseDate());
-        DownloadImageInTask imageCreationHelper = new DownloadImageInTask(episodeViewHolder.episodeImage);
+        episodeViewHolder.episodePubDate.setText(episodeView.getPubDate().toString());
+        UrlToImageTask imageCreationHelper = new UrlToImageTask(episodeViewHolder.episodeImage);
         return result;
     }
-
-
 
     protected static class EpisodeViewHolder {
         ImageView episodeImage;
         TextView episodeTitle;
-        TextView espidePubDate;
+        TextView episodePubDate;
     }
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CastDroid</string>
+    <string name="description_placeholder">Placeholder</string>
+    <string name="home_mySubs">Subscriptions</string>
+    <string name="home_recom">Recommended</string>
+    <string name="home_themes">Categories</string>
+    <string name="home_welcome">CASTDROID</string>
+    <string name="navigation_discover">Discover</string>
+    <string name="navigation_home">Home</string>
+    <string name="navigation_my_casts">My Casts</string>
+    <string name="navigation_playing">Playing</string>
+</resources>

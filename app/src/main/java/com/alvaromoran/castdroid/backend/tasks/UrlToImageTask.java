@@ -1,4 +1,4 @@
-package com.alvaromoran.castdroid.backend.helpers;
+package com.alvaromoran.castdroid.backend.tasks;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,11 +10,11 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class DownloadImageInTask extends AsyncTask<String, Void, Bitmap> {
+public class UrlToImageTask extends AsyncTask<String, Void, Bitmap> {
 
     private ImageView referredImage;
 
-    public DownloadImageInTask(ImageView imageReference) {
+    public UrlToImageTask(ImageView imageReference) {
         this.referredImage = imageReference;
     }
 

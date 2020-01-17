@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="30dp"
+    android:clipToPadding="false">
+    
+    <ImageView
+        android:id="@+id/category_background"
+        android:layout_width="@dimen/default_categoryWidth"
+        android:layout_height="@dimen/default_categoryHeight"
+        android:background="@drawable/bg_art"
+        android:contentDescription="@string/description_placeholder"
+        style="@style/GenreCard">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/category_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/description_placeholder"
+        android:layout_alignBottom="@id/category_background"
+        android:layout_alignEnd="@id/category_background"
+        style="@style/GenreCardText">
+    </TextView>
+
+</RelativeLayout>
